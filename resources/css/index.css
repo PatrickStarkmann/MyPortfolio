@@ -1,0 +1,137 @@
+html {
+    font-size: 100%;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-family: 'Roboto Mono', monospace;
+}
+
+:root {
+    --primary-color: white;
+    --secondary-color: black;
+}
+
+.darkmode {
+    --primary-color: #21272d;
+    --secondary-color: white;
+}
+
+.about-me img {
+    width: 15%;
+    height: 10%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2.5em;
+}
+
+h1 {
+    padding-left: 1rem;
+    font-size: 2.5rem;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1.5rem;
+}
+
+a {
+    color: var(--secondary-color);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-me p {
+    font-size: 1.5rem;
+}
+
+.about-me {
+    padding: 2rem 3rem;
+}
+
+.projects {
+    margin: 2rem 3rem;
+}
+
+.projects ul li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.skills form label {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+.skills {
+    margin: 6rem 3rem;
+}
+
+.skills form select {
+    font-size: 1rem;
+}
+
+#darkmode_button {
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    float: right;
+}
+
+@media only screen and (max-width: 430px) {
+    h2 {
+        font-size: 3rem;
+    }
+
+    .about-me p {
+        font-size: 2.5rem;
+        width: 100%;
+    }
+
+    .about-me img {
+        width: 25rem;
+        height: 25rem;
+        margin-left: 15rem;
+    }
+
+    .projects ul li a {
+        font-size: 2rem;
+    }
+
+    .projects ul li {
+        font-size: 2rem;
+    }
+
+    .skills form label {
+        font-size: 2.5rem;
+    }
+
+    .skills form select {
+        font-size: 1.5rem;
+    }
+
+    #darkmode_button {
+        font-size: 2rem;
+        float: left;
+        margin: 2rem 2.5rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+}
